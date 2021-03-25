@@ -1,0 +1,18 @@
+testbed:
+  name: testbed
+
+devices:
+  pmathy-dmp-l3out-csr:
+    type: router
+    os: iosxe
+    series: csr1000v
+    credentials:
+      default:
+        username: admin
+        password: test123
+      enable:
+        password: test123
+    connections:
+      mgmt:
+        protocol: ssh
+        ip: 192.168.1.200
